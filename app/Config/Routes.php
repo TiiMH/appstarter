@@ -5,4 +5,5 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/login','connection::index');
+$routes->get('/login','Connection::index');
+$routes->post('/login', 'Connection::attemptLogin');
