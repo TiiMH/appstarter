@@ -92,3 +92,14 @@ define('EVENT_PRIORITY_NORMAL', 100);
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_HIGH instead.
  */
 define('EVENT_PRIORITY_HIGH', 10);
+
+/**
+ * Définition d'une constante applicative qui indique 
+ * le login de l'admin de l'application
+ */
+define('APP_ADMIN_LOGIN','administrator');
+/**
+ * Définition d'une constante applicative qui indique 
+ * le mot de passe de l'admin de l'application
+ */
+define('APP_ADMIN_PASSWORD','1234');
