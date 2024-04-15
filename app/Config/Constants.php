@@ -97,7 +97,7 @@ define('EVENT_PRIORITY_HIGH', 10);
  * Définition d'une constante applicative qui indique
  * le login de l'admin de l'application
  */
-define('APP_ADMIN_LGIN', 'administrator');
+define('APP_ADMIN_LOGIN', 'administrator');
 /**
  * Définition d'une constante applicative qui indique
  * le mot de passe de l'admin de l'application
