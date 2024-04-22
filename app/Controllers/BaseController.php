@@ -55,4 +55,17 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+
+    /**
+     * générer la page view avec header / footer
+     */
+    protected function generateView(string $viewname)
+    {
+        $session = session();
+        $headerData = [
+            'loggedIn' => $session->get('loggedIn'),
+            'name' => $session->get('username')
+        ];
+        return view('templates/header', $headerData) . view('templates/footer'); 
+    }
 }

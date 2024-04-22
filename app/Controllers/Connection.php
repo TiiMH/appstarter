@@ -1,12 +1,16 @@
 <?php
 namespace App\Controllers;
 
-Class Connection extends BaseController
+class Connection extends BaseController
 {
     public function index(): string 
     {
-         $template = 
-            view ('templates/header.php').
+        $session = session();
+        $template = 
+            view ('templates/header.php', [
+                'loggedIn' => $session->get('loggedIn'),
+                'name' => $session->get('username')
+                ]) .
             view ('login_form').
             view ('templates/footer.php');
           return $template;   
