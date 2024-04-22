@@ -40,7 +40,7 @@ class Connection extends BaseController
         $session->set([
             'username' => isset ($user) ? ($user['nom_abonne'] . strtoupper($user['nom_abonne'])) : 'Administrator',
             'loggedIn' => true
-        ])
+        ]);
         return redirect()->to("/home");
     }
 }
