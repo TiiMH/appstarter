@@ -7,14 +7,14 @@ use CodeIgniter\Model;
 class Abonne extends Model
 {
     protected $table   = 'abonne';
-    protected $primaryKey = 'matricule abonne';
+    protected $primaryKey = 'matricule_abonne';
     protected $allowedFields = ['matricule_abonne', 'nom_abonne'];
 
     /**
      * retrouve une ligne de la table abonne par son matricule
      */
-    function getabonneBymatricule($matriucule)
+    function getabonneBymatricule($matricule)
     {
-        return $this->find($matriucule);
+        return $this->find($matricule);
     }
 }
