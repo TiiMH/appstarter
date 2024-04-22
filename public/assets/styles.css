@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body.background {
+    background-image: url("/assets/img/background.avif");
+}
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+footer {
+    background-color: #95a5a6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

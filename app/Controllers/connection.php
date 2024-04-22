@@ -6,7 +6,7 @@ class Connection extends BaseController
 {
     public function index(): string
     {
-        return view('login_form');
+        return view('templates/header',['background'=>true]). view('login_form').view('templates/footer');
     }
 
     public function attemptLogin()
@@ -40,7 +40,7 @@ class Connection extends BaseController
         $session->set([
             'username' => isset ($user) ? ($user['nom_abonne'] . strtoupper($user['nom_abonne'])) : 'Administrator',
             'loggedIn' => true
-        ])
+        ]);
         return redirect()->to("/home");
     }
 }
