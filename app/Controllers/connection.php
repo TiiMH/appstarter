@@ -9,7 +9,7 @@ Class Connection extends BaseController
             view ('templates/header.php').
             view ('login_form').
             view ('templates/footer.php');
-          return $template;
+          return $template;   
     }
     public function attemptLogin() 
     {
@@ -28,17 +28,19 @@ Class Connection extends BaseController
         /* On vérifie qu'on a bien récupéré un abonné et que son nom
             corresponde au mot de passe tapé par l'utilisateur */
         if (isset($rechercheAbonne) && $rechercheAbonne['nom_abonne'] === $values['password']){
-            return $this->loginUser($rechercheAbonne);
+            return redirect()->to("home");
         }
         else 
         {
             // sinon on s'est trompé : on redirige vers le login
             return redirect()->to('/login');
         }
-
+            
     }
 
-    /**Retrouve une ligne de la table abonne par son matricule_abonne*/
+    /**
+     * Retrouve une ligne de la table abonne par son matricule_abonne
+     */
 
      private function loginUser(?object $user = null)
      {
