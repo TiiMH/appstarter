@@ -5,6 +5,7 @@ body {
 
 body.background {
     background-image: url("/assets/img/background.avif");
+    background-size: 100%;
 }
 header {
     background-color: #3498db;
