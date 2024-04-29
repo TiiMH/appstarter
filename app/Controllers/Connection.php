@@ -42,9 +42,7 @@ class Connection extends BaseController
             
     }
 
-    /**
-     * Retrouve une ligne de la table abonne par son matricule_abonne
-     */
+    /* Retrouve une ligne de la table abonne par son matricule_abonne*/
 
      private function loginUser(?object $user = null)
      {
@@ -55,4 +53,4 @@ class Connection extends BaseController
         ]);
         return redirect()->to("home");
      }
-}
+    }

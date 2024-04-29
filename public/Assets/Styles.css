@@ -1,23 +1,105 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url('https://wallpaperaccess.com/full/5487841.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-header {
-    background-color: #3498db;
-    color: white;
+
+h1 {
+    color: azure; 
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    width: 100px; 
+    padding: 30px;
+    color: rgba(0, 0, 0, 0); 
+    container: top; 
+    text-align: center; 
+}
+
+nav {
+    background-color: #eee;
     padding: 20px;
-    text-align: center;
-}
-main {
-    background-color: #ecf0f1;
-    padding: 20px;
-}
-footer {
-    background-color: #95a5a6;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    width: 200px;
+    height: 100vh;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+main {
+    margin-left: 220px; /* Pour faire de la place à la navbar */
+    padding: 20px; /* Pour éviter que le contenu ne soit collé au bord */
+}
+
+/* Login Form CSS */
+
+form {
+    background-color: #fff; /* Couleur de fond du formulaire */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    max-width: 400px;
     width: 100%;
+    margin-top: 20px; /* Ajout d'un espace au-dessus du formulaire */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Couleur du texte */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Couleur de la bordure */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
+    width: 100%; /* Remplir la largeur du formulaire */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
 }
