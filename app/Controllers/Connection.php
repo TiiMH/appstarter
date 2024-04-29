@@ -11,8 +11,7 @@ class Connection extends BaseController
                 'loggedIn' => $session->get('loggedIn'),
                 'name' => $session->get('username')
                 ]) .
-            view ('login_form').
-            view ('templates/footer.php');
+            view ('login_form');
           return $template;   
     }
     public function attemptLogin() 
