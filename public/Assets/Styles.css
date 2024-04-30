@@ -3,12 +3,35 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('https://wallpaperaccess.com/full/5487841.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.site-name {
+    font-size: 24px;
 }
 
 h1 {
