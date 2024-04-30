@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => null,
-        'database'     => 'tp3-bibliotheque',
+        'database'     => 'esicad_tp3_bibliothèque',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion à la bibliothèque en ligne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Connexion à la bibliothèque en ligne</h1>
+</header>
+
+<section>
+    <h2>Se connecter</h2>
+    <form action="attempt-login.php" method="post">
+        <label for="username">Nom d'utilisateur :</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Se connecter">
+        <a href="page.html">pagehtml</a>
+    </form>
+    <?php
+    // Vérification si un message d'erreur est passé en paramètre d'URL
+    if (isset($_GET['error'])) {
+        $error_message = $_GET['error'];
+        echo "<p style='color: red;'>$error_message</p>";
+    }
+    ?>
+</section>
+
+<footer>
+    <p>&copy; 2024 Bibliothèque en ligne. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
